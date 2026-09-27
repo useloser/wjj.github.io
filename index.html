@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>王君军｜采购 · 供应链 求职简历</title>
+<meta name="description" content="王君军，西南大学（211）水产养殖学本科，具备跨境电商成品采购全链路实习经验。求职方向：采购 / 供应链。" />
+<style>
+:root{
+  --bg:#030712;
+  --card:rgba(255,255,255,0.04);
+  --card-hover:rgba(255,255,255,0.08);
+  --line:rgba(255,255,255,0.08);
+  --brand:#3b82f6;
+  --brand2:#06b6d4;
+  --brand3:#22d3ee;
+  --ink:#ffffff;
+  --body:rgba(255,255,255,0.78);
+  --muted:rgba(255,255,255,0.5);
+  --r:20px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:80px;
+  overflow-x:hidden;
+}
+body{
+  margin:0;background:var(--bg);color:var(--body);
+  font-size:16px;line-height:1.8;
+  font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+  -webkit-font-smoothing:antialiased;
+  min-height:100vh;
+}
+h1,h2,h3,h4{color:var(--ink);line-height:1.25;margin:0}
+a{color:inherit;text-decoration:none}
+ul{margin:0;padding:0;list-style:none}
+.wrap{width:min(1100px,90vw);margin:0 auto;position:relative;z-index:2}
+section[id]{scroll-margin-top:72px}
+
+#deepSea{
+  position:fixed;inset:0;width:100%;height:100%;
+  z-index:0;pointer-events:none;display:block;
+}
+
+header, main, footer{position:relative;z-index:1}
+
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1000;
+  opacity:.02;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  transition:background .4s,backdrop-filter .4s,border-color .4s;
+  border-bottom:1px solid transparent;
+}
+.nav.scrolled{
+  background:rgba(3,7,18,0.7);
+  -webkit-backdrop-filter:saturate(180%) blur(18px);
+  backdrop-filter:blur(18px);
+  border-color:var(--line);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+.brand{font-weight:800;color:var(--ink);letter-spacing:.01em;font-size:17px}
+.brand em{font-style:normal;color:var(--brand2);font-weight:600;font-size:12px;margin-left:10px;
+  padding:3px 10px;background:rgba(6,182,212,0.12);border-radius:999px;vertical-align:2px}
+.links{display:flex;align-items:center;gap:2px;overflow-x:auto;scrollbar-width:none}
+.links::-webkit-scrollbar{display:none}
+.links a{padding:8px 14px;border-radius:10px;font-size:14px;color:var(--muted);
+  white-space:nowrap;transition:.25s}
+.links a:hover{color:#fff}
+.links a.active:not(.cta){color:#fff;background:rgba(59,130,246,0.14)}
+.links a.cta{color:#fff;background:linear-gradient(135deg,var(--brand),var(--brand2));
+  font-weight:600;margin-left:8px;box-shadow:0 4px 14px rgba(59,130,246,0.3)}
+.links a.cta:hover{transform:translateY(-1px);box-shadow:0 6px 20px rgba(59,130,246,0.4)}
+
+.hero{
+  position:relative;min-height:100vh;display:flex;align-items:center;
+  padding:120px 0 80px;overflow:hidden;
+}
+#heroSpiral{
+  position:absolute;inset:0;width:100%;height:100%;
+  z-index:1;pointer-events:none;display:block;
+}
+.hero-grid{
+  position:relative;z-index:2;
+  display:grid;grid-template-columns:1.4fr .8fr;gap:50px;align-items:center;
+}
+.hero-left{animation:heroIn 1s cubic-bezier(.16,1,.3,1) both}
+.hero-right{animation:heroIn 1s cubic-bezier(.16,1,.3,1) .2s both}
+@keyframes heroIn{from{opacity:0;transform:translateY(32px)}to{opacity:1;transform:none}}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:9px;font-size:12.5px;font-weight:600;
+  color:var(--brand2);background:rgba(6,182,212,0.08);
+  border:1px solid rgba(6,182,212,0.2);padding:6px 16px;border-radius:999px;
+  margin-bottom:24px;letter-spacing:.03em;
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+.hero-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--brand2);
+  box-shadow:0 0 8px var(--brand2);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+
+.hero h1{
+  font-size:clamp(48px,9vw,92px);font-weight:900;letter-spacing:-.035em;
+  line-height:1.02;margin-bottom:16px;
+  background:linear-gradient(135deg,#fff 25%,rgba(255,255,255,0.45));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;
+  background-clip:text;
+}
+.hero-role{
+  font-size:clamp(17px,2.2vw,21px);font-weight:600;
+  color:var(--brand2);margin-bottom:22px;letter-spacing:.01em;
+}
+.hero-desc{font-size:15.5px;color:var(--muted);max-width:56ch;line-height:1.85;margin-bottom:28px}
+.hero-desc .hl{color:var(--brand2);font-weight:700;font-style:normal}
+
+.kw-list{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:32px}
+.kw-list li{
+  font-size:13px;font-weight:600;color:rgba(255,255,255,0.78);
+  background:rgba(255,255,255,0.05);border:1px solid var(--line);
+  border-radius:10px;padding:6px 14px;transition:.25s;
+  -webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);
+}
+.kw-list li:hover{background:rgba(6,182,212,0.15);border-color:rgba(6,182,212,0.35);color:#fff}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:12px 26px;
+  border-radius:12px;font-weight:600;font-size:15px;
+  border:1px solid transparent;transition:.28s;cursor:pointer;
+}
+.btn-primary{
+  background:linear-gradient(135deg,var(--brand2),var(--brand3));color:#fff;
+  box-shadow:0 8px 28px rgba(6,182,212,0.35);
+}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 36px rgba(6,182,212,0.5)}
+.btn-ghost{
+  background:rgba(255,255,255,0.05);border-color:var(--line);color:rgba(255,255,255,0.82);
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+}
+.btn-ghost:hover{background:rgba(255,255,255,0.1);border-color:rgba(255,255,255,0.22);color:#fff}
+
+.photo-card{
+  background:rgba(8,18,35,0.55);
+  border:1px solid rgba(255,255,255,0.1);border-radius:24px;
+  padding:28px 24px;text-align:center;position:relative;overflow:hidden;
+  box-shadow:0 20px 60px rgba(0,0,0,0.45);
+  -webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);
+}
+.photo-card::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(300px 200px at 50% 0%,rgba(6,182,212,0.14),transparent 70%);
+}
+.photo-img{
+  width:100px;height:100px;border-radius:50%;object-fit:cover;
+  object-position:center 28%;display:block;margin:0 auto 18px;
+  border:3px solid rgba(6,182,212,0.4);
+  box-shadow:0 0 0 6px rgba(6,182,212,0.06),0 8px 28px rgba(0,0,0,0.4);
+  position:relative;
+}
+.photo-card .stats{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:relative}
+.photo-card .stats div{
+  background:rgba(255,255,255,0.025);border:1px solid var(--line);
+  border-radius:14px;padding:14px 12px;transition:.25s;
+}
+.photo-card .stats div:hover{background:rgba(6,182,212,0.08);border-color:rgba(6,182,212,0.22)}
+.photo-card .stats strong{
+  display:block;font-size:26px;font-weight:800;color:var(--brand2);
+  letter-spacing:-.02em;line-height:1.15;
+}
+.photo-card .stats span{display:block;font-size:11.5px;color:var(--muted);line-height:1.5;margin-top:4px}
+
+.scroll-hint{
+  position:absolute;bottom:32px;left:50%;transform:translateX(-50%);
+  display:flex;flex-direction:column;align-items:center;gap:8px;
+  color:var(--muted);font-size:11px;letter-spacing:.15em;z-index:3;
+  animation:float 2.5s ease-in-out infinite;
+}
+@keyframes float{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(8px)}}
+.scroll-hint .line{width:1px;height:40px;background:linear-gradient(180deg,var(--brand2),transparent)}
+
+.sec{padding:100px 0;position:relative}
+.sec-head{margin-bottom:48px}
+.kicker{
+  font-size:12px;font-weight:800;letter-spacing:.2em;color:var(--brand2);
+  text-transform:uppercase;margin-bottom:12px;
+}
+.sec-head h2{font-size:clamp(28px,4vw,42px);font-weight:900;letter-spacing:-.02em}
+.sec-head h2 .accent{
+  background:linear-gradient(135deg,var(--brand2),var(--brand3));
+  -webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;
+}
+.sec-head p{margin:16px 0 0;color:var(--muted);font-size:15px;max-width:62ch;line-height:1.8}
+
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{
+  background:rgba(8,18,35,0.5);border:1px solid var(--line);border-radius:var(--r);
+  padding:28px 24px;transition:all .4s cubic-bezier(.16,1,.3,1);
+  position:relative;overflow:hidden;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+}
+.card::before{
+  content:"";position:absolute;top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(6,182,212,0.4),transparent);
+  opacity:0;transition:opacity .4s;
+}
+.card:hover{
+  background:var(--card-hover);border-color:rgba(6,182,212,0.25);
+  transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,0.4);
+}
+.card:hover::before{opacity:1}
+.card .num{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:36px;height:36px;border-radius:11px;font-size:13px;font-weight:800;
+  background:linear-gradient(135deg,rgba(6,182,212,0.15),rgba(34,211,238,0.08));
+  color:var(--brand2);border:1px solid rgba(6,182,212,0.2);margin-bottom:16px;
+}
+.card h3{font-size:16px;font-weight:700;margin-bottom:8px}
+.card p{font-size:14px;color:var(--muted);line-height:1.75}
+
+.edu-card{
+  background:rgba(8,18,35,0.5);border:1px solid var(--line);border-radius:var(--r);
+  padding:32px;transition:all .35s;position:relative;overflow:hidden;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+}
+.edu-card::before{
+  content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+  background:linear-gradient(180deg,var(--brand2),var(--brand3));
+}
+.edu-card:hover{border-color:rgba(6,182,212,0.22);background:var(--card-hover)}
+.edu-top{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:8px;padding-bottom:18px;border-bottom:1px solid var(--line);margin-bottom:20px;
+}
+.edu-top h3{font-size:20px}
+.edu-top h3 small{font-size:14px;font-weight:600;color:var(--brand2);margin-left:10px}
+.edu-date{font-size:13px;color:var(--muted);font-weight:600;white-space:nowrap}
+.edu-body li{font-size:14.5px;color:var(--muted);margin-bottom:12px;line-height:1.8}
+.edu-body li:last-child{margin-bottom:0}
+.edu-body b{color:rgba(255,255,255,0.88);font-weight:700}
+
+.tl{position:relative;padding-left:38px}
+.tl::before{
+  content:"";position:absolute;left:8px;top:10px;bottom:10px;width:1px;
+  background:linear-gradient(180deg,var(--brand2),rgba(6,182,212,0.08));
+}
+.tl-item{position:relative;margin-bottom:44px}
+.tl-item:last-child{margin-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-38px;top:8px;width:17px;height:17px;border-radius:50%;
+  background:var(--bg);border:2.5px solid var(--brand2);
+  box-shadow:0 0 0 5px rgba(6,182,212,0.1),0 0 18px rgba(6,182,212,0.3);
+}
+.tl-head{
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;
+  gap:8px;margin-bottom:14px;
+}
+.tl-head h3{font-size:18px;font-weight:800}
+.tl-head h3 span{font-weight:600;color:var(--brand2);font-size:14px;margin-left:10px}
+.tl-date{
+  font-size:12.5px;color:var(--brand3);font-weight:700;white-space:nowrap;
+  background:rgba(6,182,212,0.1);padding:4px 12px;border-radius:8px;
+  border:1px solid rgba(6,182,212,0.18);
+}
+.bullets{display:grid;gap:10px}
+.bullets li{
+  position:relative;padding-left:20px;font-size:14.5px;
+  color:var(--muted);line-height:1.8;
+}
+.bullets li::before{
+  content:"";position:absolute;left:2px;top:.72em;width:6px;height:6px;
+  border-radius:50%;background:var(--brand3);box-shadow:0 0 6px rgba(34,211,238,0.5);
+}
+.bullets b{color:rgba(255,255,255,0.88);font-weight:700}
+.n{font-style:normal;font-weight:800;color:var(--brand2)}
+
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.skill-card{
+  background:rgba(8,18,35,0.5);border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 22px;transition:all .4s;
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+}
+.skill-card:hover{
+  background:var(--card-hover);border-color:rgba(6,182,212,0.25);
+  transform:translateY(-4px);box-shadow:0 16px 40px rgba(0,0,0,0.35);
+}
+.skill-card h3{
+  font-size:15px;font-weight:700;margin-bottom:16px;
+  display:flex;align-items:center;gap:10px;
+}
+.skill-card h3 .ico{
+  width:32px;height:32px;border-radius:10px;display:grid;place-items:center;
+  background:linear-gradient(135deg,rgba(6,182,212,0.15),rgba(34,211,238,0.08));
+  color:var(--brand2);font-size:12px;font-weight:800;
+  border:1px solid rgba(6,182,212,0.18);
+}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{
+  background:rgba(255,255,255,0.03);border:1px solid var(--line);
+  border-radius:999px;padding:6px 14px;font-size:13px;color:var(--body);
+  transition:.25s;
+}
+.tag:hover{background:rgba(6,182,212,0.1);border-color:rgba(6,182,212,0.25);color:#fff}
+
+.contact-card{
+  position:relative;border-radius:28px;padding:64px 40px;text-align:center;
+  background:linear-gradient(135deg,rgba(6,182,212,0.12),rgba(59,130,246,0.06));
+  border:1px solid rgba(6,182,212,0.2);overflow:hidden;
+  -webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);
+}
+.contact-card::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(600px 300px at 30% 0%,rgba(6,182,212,0.14),transparent 60%),
+    radial-gradient(500px 300px at 80% 100%,rgba(59,130,246,0.08),transparent 60%);
+}
+.contact-card h2{
+  font-size:clamp(26px,3.5vw,36px);font-weight:900;
+  position:relative;margin-bottom:14px;letter-spacing:-.01em;
+}
+.contact-card p{
+  position:relative;color:var(--muted);font-size:15px;
+  max-width:50ch;margin:0 auto 32px;line-height:1.8;
+}
+.contact-actions{
+  position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:12px;
+}
+.contact-meta{
+  position:relative;margin-top:28px;display:flex;flex-wrap:wrap;
+  justify-content:center;gap:12px 32px;font-size:14px;color:var(--muted);
+}
+
+.foot{
+  padding:40px 0;text-align:center;font-size:13px;color:var(--muted);
+  border-top:1px solid var(--line);
+  background:rgba(3,7,18,0.4);
+}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media (max-width:960px){
+  .hero{min-height:auto;padding:110px 0 70px}
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .photo-card{max-width:360px;margin:0 auto;width:100%}
+  .cards,.skill-grid{grid-template-columns:1fr 1fr}
+  .sec{padding:80px 0}
+}
+@media (max-width:640px){
+  .cards,.skill-grid{grid-template-columns:1fr}
+  .brand em{display:none}
+  .links a{padding:8px 10px;font-size:13px}
+  .tl{padding-left:30px}
+  .tl-item::before{left:-30px}
+  .contact-card{padding:44px 22px}
+  .edu-card{padding:24px 20px}
+  .scroll-hint{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .card:hover,.skill-card:hover,.btn:hover{transform:none}
+  .hero-left,.hero-right{animation:none}
+}
+</style>
+</head>
+<body>
+
+<canvas id="deepSea" aria-hidden="true"></canvas>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home">王君军<em>采购 / 供应链</em></a>
+    <nav class="links">
+      <a href="#about">个人优势</a>
+      <a href="#education">教育背景</a>
+      <a href="#experience">实习经历</a>
+      <a href="#campus">校园经历</a>
+      <a href="#skills">技能工具</a>
+      <a class="cta" href="#contact">联系我</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="hero" id="home">
+    <canvas id="heroSpiral" aria-hidden="true"></canvas>
+
+    <div class="wrap hero-grid">
+      <div class="hero-left">
+        <span class="hero-badge">2027 届 · 西南大学（211）</span>
+        <h1>王君军</h1>
+        <p class="hero-role">求职意向：采购 / 供应链 / 品类运营</p>
+        <p class="hero-desc">
+          西南大学（211）水产养殖学本科在读，具备跨境电商成品采购全链路实习经验。
+          熟悉供方开发、询价比价、下单跟单、品控协同与对账结算，
+          日常跟进 <em class="n hl">20</em> 款礼服采购需求、核查 <em class="n hl">50</em> 项库存数据，
+          可联动运营、质检、仓储、财务推动采购异常闭环。
+        </p>
+        <ul class="kw-list">
+          <li>供方寻源</li>
+          <li>采购执行</li>
+          <li>成本管控</li>
+          <li>库存物流</li>
+          <li>数据运营</li>
+          <li>跨部协同</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#experience">查看实习经历</a>
+          <a class="btn btn-ghost" href="#contact">联系我</a>
+        </div>
+      </div>
+
+      <aside class="hero-right">
+        <div class="photo-card">
+          <img class="photo-img" src="avatar.jpg" alt="王君军个人照片">
+          <div class="stats">
+            <div><strong>20</strong><span>款礼服采购需求</span></div>
+            <div><strong>50</strong><span>项库存数据核查</span></div>
+            <div><strong>60+</strong><span>项对账付款事项</span></div>
+            <div><strong>90%+</strong><span>店铺好评率</span></div>
+          </div>
+        </div>
+      </aside>
+    </div>
+
+    <div class="scroll-hint">
+      <span>SCROLL · 下潜</span>
+      <div class="line"></div>
+    </div>
+  </section>
+
+  <section class="sec" id="about">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Strengths · 海平面 200m</p>
+        <h2>个人优势<span class="accent">.</span></h2>
+        <p>围绕采购岗位核心能力，从寻源、执行、成本、库存到数据与协同，形成完整的采购作业闭环。</p>
+      </div>
+      <div class="cards">
+        <div class="card reveal">
+          <div class="num">01</div>
+          <h3>供方开发</h3>
+          <p>具备多渠道供应商寻源、筛选评估与比价谈判能力，可快速匹配需求、开发优质供方资源。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">02</div>
+          <h3>采购执行</h3>
+          <p>熟悉采购全流程运作，可独立完成询价比价、下单跟进、交期管控、对账结算全链路工作。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">03</div>
+          <h3>成本管控</h3>
+          <p>掌握多维度比价与成本拆解方法，可通过供方博弈与策略优化控制采购成本，保障毛利空间。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">04</div>
+          <h3>库存物流</h3>
+          <p>具备库存水位管控与物流协同经验，可通过备货策略优化平衡断货与积压风险，保障交付时效。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">05</div>
+          <h3>数据运营</h3>
+          <p>熟练使用 ERP 系统与办公软件维护采购台账、跟踪交期，可通过数据复盘优化采购效率。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">06</div>
+          <h3>跨部协同</h3>
+          <p>具备多部门协同经验，可联动运营、质检、仓储、财务推进采购异常闭环，保障履约质量。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="education">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Education · 中层 800m</p>
+        <h2>教育背景<span class="accent">.</span></h2>
+      </div>
+      <div class="edu-card reveal">
+        <div class="edu-top">
+          <h3>西南大学（211）<small>水产养殖学 · 本科</small></h3>
+          <span class="edu-date">2023.09 – 2027.07</span>
+        </div>
+        <ul class="edu-body">
+          <li><b>专业基底：</b>修习动物学、化学、生态学等核心课程，具备生物品类专业认知与质量研判基础，掌握数据统计与模型分析方法，可支撑品类采购的成本核算与供应商评估。</li>
+          <li><b>工具能力：</b>熟练使用 WPS、Excel 完成采购台账、数据统计与分析；掌握基础建模与剪辑工具，可输出采购分析报告与物料清单。</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="experience">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Experience · 深层 1500m</p>
+        <h2>实习经历<span class="accent">.</span></h2>
+      </div>
+      <div class="tl">
+
+        <article class="tl-item reveal">
+          <div class="tl-head">
+            <h3>广州拓扑网络技术有限公司<span>采购实习生</span></h3>
+            <span class="tl-date">2026.09 – 至今</span>
+          </div>
+          <ul class="bullets">
+            <li><b>供方寻源：</b>负责中高端礼服成品采购执行，根据买手 SKU 需求通过 1688 等多渠道开发筛选供应商，完成询价比价、样品确认、下单跟进与交期管控，日常跟进 <em class="n">20</em> 款礼服采购需求。</li>
+            <li><b>订单运营：</b>使用马帮 ERP 完成采购订单录入、库存查询与数据维护，日常核查 <em class="n">50</em> 项库存数据，保障订单、库存与到货信息准确可追溯；跟进供应商对账、付款申请与审批流程，协助处理 <em class="n">60</em> 余项对账付款事项。</li>
+            <li><b>品控协同：</b>参与到资质检环节，日常跟进 <em class="n">7–15</em> 批到货检验，记录并反馈质量异常；联动运营、仓储、质检、财务等部门推动采购异常闭环，保障履约质量。</li>
+            <li><b>成本管控：</b>通过多供应商、多平台比价与交期对比，协助控制采购成本与延期、断货风险，熟悉跨境电商成品采购从寻源、下单到入仓的全链路流程。</li>
+          </ul>
+        </article>
+
+        <article class="tl-item reveal">
+          <div class="tl-head">
+            <h3>广州致合生物科技有限公司<span>销售岗</span></h3>
+            <span class="tl-date">2026.07 – 2026.09</span>
+          </div>
+          <ul class="bullets">
+            <li><b>供方选型：</b>梳理动保产品线，拆解 <em class="n">5</em> 类核心原料成本构成，对比 10 余家竞品参数与价格，结合区域养殖特点筛选 <em class="n">6</em> 款主推产品，配套制定供应策略。</li>
+            <li><b>成本定价：</b>针对 <em class="n">4</em> 类养殖模式拆解单次使用成本，制定 <em class="n">3</em> 档差异化供应方案；通过套餐与阶梯折扣策略推动小棚客户单次采购量提升 <em class="n">15%</em>、复购率提升 <em class="n">10%</em>，稳定产品毛利率。</li>
+            <li><b>库存优化：</b>结合历史销售与季节波动跟踪库存水位，提前锁定补货节点；8 月对虾出虾高峰及小棚启动阶段调整备货策略，断货率控制在 <em class="n">5%</em> 以内，积压库存降低 <em class="n">15%</em>。</li>
+            <li><b>物流协同：</b>对接仓储物流协调发货排期，重点客户紧急订单 24 小时响应，到货率约 <em class="n">95%</em>，保障交付时效与客户满意度。</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="campus">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Campus · 深海 2500m</p>
+        <h2>校园经历<span class="accent">.</span></h2>
+      </div>
+      <div class="tl">
+        <article class="tl-item reveal">
+          <div class="tl-head">
+            <h3>闲鱼平台零售项目<span>负责人</span></h3>
+            <span class="tl-date">2026.06 – 2026.09</span>
+          </div>
+          <ul class="bullets">
+            <li><b>品类选品：</b>持续跟踪平台热销品类、搜索趋势及用户评价，锁定二次元周边、麦当劳代下单两大细分赛道，精准匹配市场需求规划选品，提升周转效率。</li>
+            <li><b>货源开发：</b>对接二次元圈层与麦当劳高频消费群体，通过麦金卡权益代购、个人闲置转卖搭建多渠道稳定供货体系，保障货源充足、成本可控。</li>
+            <li><b>定价管控：</b>综合同款市价、商品成色及进货成本执行差异化定价，急售品低价快出加速周转，高价值品预留议价空间；单笔毛利控制在 <em class="n">10%–20%</em>，累计成交 <em class="n">30</em> 余笔，总成交额约 <em class="n">3000</em> 元。</li>
+            <li><b>商务谈判：</b>快速响应买家咨询，主动提供实拍图并如实描述瑕疵，有效降低退货纠纷，店铺好评率稳定在 <em class="n">90%</em> 以上；灵活运用锚定定价、附赠小配件等谈判技巧，在守住利润底线前提下促成交易。</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="skills">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <p class="kicker">Skills · 海底 4000m</p>
+        <h2>技能与工具<span class="accent">.</span></h2>
+      </div>
+      <div class="skill-grid">
+        <div class="skill-card reveal">
+          <h3><span class="ico">01</span>办公与数据</h3>
+          <div class="tags">
+            <span class="tag">WPS</span>
+            <span class="tag">Excel</span>
+            <span class="tag">采购台账</span>
+            <span class="tag">数据统计与分析</span>
+            <span class="tag">基础建模</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="ico">02</span>系统与平台</h3>
+          <div class="tags">
+            <span class="tag">马帮 ERP</span>
+            <span class="tag">1688 等多渠道采购平台</span>
+            <span class="tag">订单 / 库存数据维护</span>
+            <span class="tag">对账付款流程</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <h3><span class="ico">03</span>专业与协同</h3>
+          <div class="tags">
+            <span class="tag">生物品类专业认知</span>
+            <span class="tag">质量研判基础</span>
+            <span class="tag">剪辑与物料输出</span>
+            <span class="tag">跨部门协同</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <h2>期待与你沟通</h2>
+        <p>目前正在寻找采购 / 供应链方向的实习或校招机会，欢迎随时联系，我会尽快回复。</p>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="tel:15292508255">📞 15292508255</a>
+          <a class="btn btn-ghost"
+             href="https://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=2775409998@qq.com"
+             target="_blank" rel="noopener">✉️ 发送邮件到 QQ 邮箱</a>
+          <a class="btn btn-ghost" href="resume.pdf" download="王君军-求职简历.pdf">⬇ 下载简历 PDF</a>
+        </div>
+        <div class="contact-meta">
+          <span>✉️ 2775409998@qq.com</span>
+          <span>📞 15292508255</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">© 2026 王君军 · 个人求职简历 · 感谢阅读</div>
+</footer>
+
+<script>
+/* ========================================================
+   1. 导航滚动态
+   ======================================================== */
+const nav = document.getElementById('nav');
+const onScroll = () => nav.classList.toggle('scrolled', window.scrollY > 40);
+onScroll();
+window.addEventListener('scroll', onScroll, { passive: true });
+
+/* ========================================================
+   1.5 平滑滚动增强
+   ======================================================== */
+(function initSmoothScroll() {
+  const NAV_HEIGHT = 64;
+  const EXTRA_OFFSET = 16;
+  const reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  function scrollToTarget(target) {
+    const rect = target.getBoundingClientRect();
+    const top = rect.top + window.scrollY - NAV_HEIGHT - EXTRA_OFFSET;
+    window.scrollTo({
+      top: Math.max(0, top),
+      behavior: reduce ? 'auto' : 'smooth'
+    });
+  }
+
+  document.querySelectorAll('a[href^="#"]').forEach((link) => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (!href || href === '#') return;
+
+      const target = document.querySelector(href);
+      if (!target) return;
+
+      e.preventDefault();
+      scrollToTarget(target);
+
+      if (history.pushState) {
+        history.pushState(null, '', href);
+      } else {
+        location.hash = href;
+      }
+    });
+  });
+
+  window.addEventListener('load', () => {
+    if (location.hash && location.hash.length > 1) {
+      const t = document.querySelector(location.hash);
+      if (t) {
+        setTimeout(() => scrollToTarget(t), 200);
+      }
+    }
+  });
+
+  window.addEventListener('hashchange', () => {
+    if (location.hash && location.hash.length > 1) {
+      const t = document.querySelector(location.hash);
+      if (t) scrollToTarget(t);
+    }
+  });
+})();
+
+/* ========================================================
+   2. 滚动入场动画
+   ======================================================== */
+const revealEls = document.querySelectorAll('.reveal');
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+  revealEls.forEach((el) => io.observe(el));
+} else { revealEls.forEach((el) => el.classList.add('in')); }
+
+/* ========================================================
+   3. 导航高亮
+   ======================================================== */
+const sections = Array.from(document.querySelectorAll('section[id]'));
+const navLinks = Array.from(document.querySelectorAll('.links a'));
+if ('IntersectionObserver' in window) {
+  const spy = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        navLinks.forEach((a) =>
+          a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id)
+        );
+      }
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  sections.forEach((s) => spy.observe(s));
+}
+
+/* ========================================================
+   4. 数字滚动
+   ======================================================== */
+function animateNumbers() {
+  document.querySelectorAll('.photo-card .stats strong').forEach((el) => {
+    const text = el.textContent.trim();
+    const match = text.match(/^(\d+)(.*)$/);
+    if (!match) return;
+    const target = parseInt(match[1]);
+    const suffix = match[2];
+    let current = 0;
+    const step = Math.max(1, Math.floor(target / 30));
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) { current = target; clearInterval(timer); }
+      el.textContent = current + suffix;
+    }, 30);
+  });
+}
+const statsEl = document.querySelector('.photo-card .stats');
+if (statsEl && 'IntersectionObserver' in window) {
+  const numObs = new IntersectionObserver((entries) => {
+    entries.forEach((e) => { if (e.isIntersecting) { animateNumbers(); numObs.disconnect(); } });
+  }, { threshold: 0.5 });
+  numObs.observe(statsEl);
+} else if (statsEl) { animateNumbers(); }
+
+/* ========================================================
+   5. 工具函数
+   ======================================================== */
+function lerp(a, b, t) { return a + (b - a) * t; }
+function clamp(v, min, max) { return Math.max(min, Math.min(max, v)); }
+
+/* ========================================================
+   6. Hero 粒子螺旋
+   ======================================================== */
+(function initHeroSpiral() {
+  const canvas = document.getElementById('heroSpiral');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  let dpr = 1, W = 0, H = 0;
+  let particles = [];
+  let rafId = null, running = false;
+  let t = 0;
+  const mouse = { x: null, y: null, active: false };
+  let burst = 0;
+
+  const CFG = {
+    arms: 4,
+    perArm: 60,
+    maxRadius: 320,
+    turns: 1.6,
+    baseSpeed: 0.0025,
+    mouseRadius: 180,
+    mouseForce: 0.6,
+  };
+
+  const COLORS = [
+    { r: 34,  g: 211, b: 238 },
+    { r: 6,   g: 182, b: 212 },
+    { r: 59,  g: 130, b: 246 },
+    { r: 147, g: 197, b: 253 },
+    { r: 139, g: 92,  b: 246 },
+  ];
+
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = canvas.clientWidth;
+    H = canvas.clientHeight;
+    canvas.width = Math.max(1, Math.floor(W * dpr));
+    canvas.height = Math.max(1, Math.floor(H * dpr));
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    buildParticles();
+  }
+
+  function buildParticles() {
+    particles = [];
+    const total = CFG.arms * CFG.perArm;
+    for (let i = 0; i < total; i++) {
+      const armIdx = i % CFG.arms;
+      const armProgress = Math.floor(i / CFG.arms) / CFG.perArm;
+      const baseAngle = (armIdx / CFG.arms) * Math.PI * 2
+                       + armProgress * CFG.turns * Math.PI * 2;
+      const baseRadius = armProgress * CFG.maxRadius;
+      const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+
+      particles.push({
+        baseAngle, baseRadius,
+        angle: baseAngle,
+        radius: baseRadius,
+        angleSpeed: CFG.baseSpeed * (0.7 + Math.random() * 0.6),
+        radiusWobble: Math.random() * Math.PI * 2,
+        size: 0.6 + Math.random() * 1.8,
+        baseAlpha: 0.3 + Math.random() * 0.6,
+        color,
+        offsetX: 0, offsetY: 0,
+        trail: [],
+      });
+    }
+  }
+
+  function step() {
+    t += 1;
+    ctx.clearRect(0, 0, W, H);
+
+    const cx = W * 0.68;
+    const cy = H * 0.5;
+    burst *= 0.94;
+
+    for (let i = 0; i < particles.length; i++) {
+      const p = particles[i];
+      p.angle += p.angleSpeed;
+      p.radiusWobble += 0.015;
+      const r = p.radius + Math.sin(p.radiusWobble) * 6;
+
+      let px = cx + Math.cos(p.angle) * r;
+      let py = cy + Math.sin(p.angle) * r * 0.55;
+
+      if (mouse.active && mouse.x !== null) {
+        const dx = px - mouse.x;
+        const dy = py - mouse.y;
+        const dist = Math.hypot(dx, dy);
+        if (dist < CFG.mouseRadius && dist > 0.5) {
+          const f = (1 - dist / CFG.mouseRadius) * CFG.mouseForce;
+          p.offsetX += (dx / dist) * f * 8;
+          p.offsetY += (dy / dist) * f * 8;
+        }
+      }
+
+      if (burst > 0.1) {
+        const bdx = px - cx;
+        const bdy = py - cy;
+        const bd = Math.hypot(bdx, bdy) || 1;
+        p.offsetX += (bdx / bd) * burst * 2;
+        p.offsetY += (bdy / bd) * burst * 2;
+      }
+
+      p.offsetX *= 0.9;
+      p.offsetY *= 0.9;
+      px += p.offsetX;
+      py += p.offsetY;
+
+      p.trail.push({ x: px, y: py });
+      if (p.trail.length > 6) p.trail.shift();
+
+      const pulse = Math.sin(t * 0.04 + p.radiusWobble);
+      const size = p.size * (1 + pulse * 0.3);
+      const alpha = p.baseAlpha * (1 + pulse * 0.2);
+
+      for (let k = 0; k < p.trail.length - 1; k++) {
+        const a1 = k / p.trail.length;
+        ctx.beginPath();
+        ctx.moveTo(p.trail[k].x, p.trail[k].y);
+        ctx.lineTo(p.trail[k + 1].x, p.trail[k + 1].y);
+        ctx.strokeStyle = `rgba(${p.color.r},${p.color.g},${p.color.b},${alpha * a1 * 0.35})`;
+        ctx.lineWidth = size * a1 * 1.2;
+        ctx.stroke();
+      }
+
+      ctx.beginPath();
+      ctx.arc(px, py, size, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${p.color.r},${p.color.g},${p.color.b},${alpha})`;
+      ctx.fill();
+
+      if (size > 1.5) {
+        ctx.beginPath();
+        ctx.arc(px, py, size * 3, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${p.color.r},${p.color.g},${p.color.b},${alpha * 0.08})`;
+        ctx.fill();
+      }
+    }
+
+    rafId = requestAnimationFrame(step);
+  }
+
+  function start() { if (!running) { running = true; rafId = requestAnimationFrame(step); } }
+  function stop() { running = false; if (rafId) cancelAnimationFrame(rafId); rafId = null; }
+
+  const hero = document.getElementById('home');
+  hero.addEventListener('mousemove', (e) => {
+    const rect = canvas.getBoundingClientRect();
+    mouse.x = e.clientX - rect.left;
+    mouse.y = e.clientY - rect.top;
+    mouse.active = true;
+  });
+  hero.addEventListener('mouseleave', () => { mouse.active = false; mouse.x = null; mouse.y = null; });
+  hero.addEventListener('click', () => { burst = 2.5; });
+  hero.addEventListener('touchstart', () => { burst = 2.5; }, { passive: true });
+
+  let rt = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(rt);
+    rt = setTimeout(resize, 150);
+  });
+
+  if ('IntersectionObserver' in window) {
+    const vis = new IntersectionObserver((entries) => {
+      entries.forEach((e) => { e.isIntersecting ? start() : stop(); });
+    }, { threshold: 0 });
+    vis.observe(hero);
+  } else { start(); }
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stop();
+    else if (!('IntersectionObserver' in window)) start();
+  });
+
+  resize();
+  start();
+})();
+
+/* ========================================================
+   7. 全局深海背景
+   ======================================================== */
+(function initDeepSea() {
+  const canvas = document.getElementById('deepSea');
+  if (!canvas) return;
+  const ctx = canvas.getContext('2d');
+  if (!ctx) return;
+
+  let dpr = 1, W = 0, H = 0;
+  let rafId = null, running = false;
+  let t = 0;
+  let depth = 0;
+  let targetDepth = 0;
+
+  const mouse = {
+    x: null, y: null,
+    active: false,
+    radius: 220,
+    influence: 0
+  };
+
+  const WATER_LAYERS = [
+    { d: 0.0, top: [12, 30, 55], bot: [7, 18, 38] },
+    { d: 0.3, top: [8, 20, 42],  bot: [5, 12, 28] },
+    { d: 0.6, top: [5, 12, 28],  bot: [3, 8, 20] },
+    { d: 1.0, top: [2, 5, 15],   bot: [1, 2, 8] },
+  ];
+
+  let creatures = [];
+  let marineSnow = [];
+
+  function getWaterColor(d) {
+    d = clamp(d, 0, 1);
+    let a = WATER_LAYERS[0], b = WATER_LAYERS[WATER_LAYERS.length - 1];
+    for (let i = 0; i < WATER_LAYERS.length - 1; i++) {
+      if (d >= WATER_LAYERS[i].d && d <= WATER_LAYERS[i + 1].d) {
+        a = WATER_LAYERS[i]; b = WATER_LAYERS[i + 1];
+        break;
+      }
+    }
+    const range = b.d - a.d || 1;
+    const localT = (d - a.d) / range;
+    return {
+      top: [
+        Math.round(lerp(a.top[0], b.top[0], localT)),
+        Math.round(lerp(a.top[1], b.top[1], localT)),
+        Math.round(lerp(a.top[2], b.top[2], localT)),
+      ],
+      bot: [
+        Math.round(lerp(a.bot[0], b.bot[0], localT)),
+        Math.round(lerp(a.bot[1], b.bot[1], localT)),
+        Math.round(lerp(a.bot[2], b.bot[2], localT)),
+      ],
+    };
+  }
+
+  function applyMouseToCreature(cr, strength, attract) {
+    if (!cr._flee) { cr._fleeX = 0; cr._fleeY = 0; cr._flee = true; }
+
+    if (!mouse.active || mouse.x === null) {
+      cr._fleeX *= 0.93;
+      cr._fleeY *= 0.93;
+      return 0;
+    }
+
+    const dx = cr.x - mouse.x;
+    const dy = cr.y - mouse.y;
+    const d = Math.hypot(dx, dy) || 1;
+
+    let prox = 0;
+    if (d < mouse.radius) {
+      prox = 1 - d / mouse.radius;
+      const dir = attract ? -1 : 1;
+      const f = prox * strength * dir;
+      cr._fleeX += (dx / d) * f * 1.5;
+      cr._fleeY += (dy / d) * f * 1.5;
+    }
+    cr._fleeX *= 0.93;
+    cr._fleeY *= 0.93;
+    const maxF = 6;
+    const fm = Math.hypot(cr._fleeX, cr._fleeY);
+    if (fm > maxF) {
+      cr._fleeX = (cr._fleeX / fm) * maxF;
+      cr._fleeY = (cr._fleeY / fm) * maxF;
+    }
+    return prox;
+  }
+
+  function createFish() {
+    const size = 8 + Math.random() * 8;
+    const pts = [];
+    for (let i = 0; i < 10; i++) {
+      const a = (i / 10) * Math.PI * 2;
+      pts.push({ x: Math.cos(a) * size * 1.6, y: Math.sin(a) * size * 0.65 });
+    }
+    pts.push({ x: -size * 1.6, y: 0 });
+    pts.push({ x: -size * 2.4, y: -size * 0.7 });
+    pts.push({ x: -size * 2.4, y: size * 0.7 });
+    return {
+      type: 'fish',
+      depthRange: [0, 0.35],
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: 0.15 + Math.random() * 0.3,
+      vy: (Math.random() - 0.5) * 0.1,
+      size, pts,
+      phase: Math.random() * Math.PI * 2,
+      color: { r: 100 + Math.random() * 80, g: 180 + Math.random() * 60, b: 230 + Math.random() * 25 },
+      alpha: 0,
+      flip: Math.random() > 0.5,
+      _fleeX: 0, _fleeY: 0, _flee: true,
+    };
+  }
+
+  function createJellyfish() {
+    const size = 18 + Math.random() * 16;
+    const pts = [];
+    for (let i = 0; i < 10; i++) {
+      const u = i / 9;
+      const a = Math.PI + u * Math.PI;
+      pts.push({ x: Math.cos(a) * size, y: Math.sin(a) * size * 0.6 });
+    }
+    for (let i = 0; i < 5; i++) {
+      const tx = -size * 0.7 + (i / 4) * size * 1.4;
+      for (let j = 1; j <= 4; j++) {
+        pts.push({ x: tx, y: j * size * 0.5, tentacle: true, idx: j, baseX: tx });
+      }
+    }
+    return {
+      type: 'jelly',
+      depthRange: [0.15, 0.55],
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.08,
+      vy: -0.1 - Math.random() * 0.15,
+      size, pts,
+      phase: Math.random() * Math.PI * 2,
+      color: { r: 150 + Math.random() * 80, g: 120 + Math.random() * 100, b: 220 + Math.random() * 35 },
+      alpha: 0,
+      _fleeX: 0, _fleeY: 0, _flee: true,
+    };
+  }
+
+  function createGlowfish() {
+    const size = 4 + Math.random() * 5;
+    return {
+      type: 'glowfish',
+      depthRange: [0.35, 0.75],
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.4,
+      vy: (Math.random() - 0.5) * 0.2,
+      size,
+      phase: Math.random() * Math.PI * 2,
+      color: { r: 100 + Math.random() * 60, g: 220 + Math.random() * 35, b: 255 },
+      alpha: 0,
+      _fleeX: 0, _fleeY: 0, _flee: true,
+    };
+  }
+
+  function createSquid() {
+    const size = 12 + Math.random() * 10;
+    const pts = [];
+    for (let i = 0; i < 8; i++) {
+      const a = (i / 8) * Math.PI * 2;
+      pts.push({ x: Math.cos(a) * size * 0.7, y: Math.sin(a) * size * 1.2 - size * 1.2 });
+    }
+    for (let i = 0; i < 6; i++) {
+      const tx = -size * 0.6 + (i / 5) * size * 1.2;
+      for (let j = 1; j <= 5; j++) {
+        pts.push({ x: tx, y: j * size * 0.4, tentacle: true, idx: j, baseX: tx });
+      }
+    }
+    return {
+      type: 'squid',
+      depthRange: [0.55, 0.9],
+      x: Math.random() * W,
+      y: Math.random() * H,
+      vx: (Math.random() - 0.5) * 0.25,
+      vy: (Math.random() - 0.5) * 0.2,
+      size, pts,
+      phase: Math.random() * Math.PI * 2,
+      color: { r: 180 + Math.random() * 60, g: 100 + Math.random() * 80, b: 220 + Math.random() * 35 },
+      alpha: 0,
+      flip: Math.random() > 0.5,
+      _fleeX: 0, _fleeY: 0, _flee: true,
+    };
+  }
+
+  function createSeaweed() {
+    const size = 30 + Math.random() * 40;
+    const pts = [];
+    const segments = 10;
+    for (let i = 0; i < segments; i++) {
+      pts.push({ x: 0, y: -i * size * 0.15, idx: i });
+    }
+    return {
+      type: 'seaweed',
+      depthRange: [0.82, 1.0],
+      x: Math.random() * W,
+      y: H + size * 0.5,
+      size, pts,
+      phase: Math.random() * Math.PI * 2,
+      color: { r: 40 + Math.random() * 40, g: 140 + Math.random() * 60, b: 130 + Math.random() * 50 },
+      alpha: 0,
+      anchorX: Math.random() * W,
+      swayBoost: 0,
+      _fleeX: 0, _fleeY: 0, _flee: true,
+    };
+  }
+
+  function buildCreatures() {
+    creatures = [];
+    for (let i = 0; i < 10; i++) creatures.push(createFish());
+    for (let i = 0; i < 4; i++) creatures.push(createJellyfish());
+    for (let i = 0; i < 12; i++) creatures.push(createGlowfish());
+    for (let i = 0; i < 3; i++) creatures.push(createSquid());
+    for (let i = 0; i < 12; i++) creatures.push(createSeaweed());
+  }
+
+  function buildMarineSnow() {
+    marineSnow = [];
+    const count = Math.min(120, Math.floor(W * H / 12000));
+    for (let i = 0; i < count; i++) {
+      marineSnow.push({
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: 0.4 + Math.random() * 1.2,
+        vx: (Math.random() - 0.5) * 0.1,
+        vy: 0.05 + Math.random() * 0.15,
+        alpha: 0.15 + Math.random() * 0.35,
+        phase: Math.random() * Math.PI * 2,
+      });
+    }
+  }
+
+  function resize() {
+    dpr = Math.min(window.devicePixelRatio || 1, 2);
+    W = canvas.clientWidth;
+    H = canvas.clientHeight;
+    canvas.width = Math.max(1, Math.floor(W * dpr));
+    canvas.height = Math.max(1, Math.floor(H * dpr));
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    buildCreatures();
+    buildMarineSnow();
+  }
+
+  function drawWater() {
+    const c = getWaterColor(depth);
+    const grad = ctx.createLinearGradient(0, 0, 0, H);
+    grad.addColorStop(0, `rgb(${c.top[0]},${c.top[1]},${c.top[2]})`);
+    grad.addColorStop(1, `rgb(${c.bot[0]},${c.bot[1]},${c.bot[2]})`);
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, W, H);
+
+    if (mouse.active && mouse.influence > 0.05 && depth < 0.6) {
+      const g2 = ctx.createRadialGradient(mouse.x, mouse.y, 0, mouse.x, mouse.y, mouse.radius);
+      const a = mouse.influence * 0.06 * (1 - depth / 0.6);
+      g2.addColorStop(0, `rgba(80,180,255,${a})`);
+      g2.addColorStop(1, 'transparent');
+      ctx.fillStyle = g2;
+      ctx.fillRect(mouse.x - mouse.radius, mouse.y - mouse.radius, mouse.radius * 2, mouse.radius * 2);
+    }
+
+    if (depth < 0.4) {
+      const rayAlpha = (1 - depth / 0.4) * 0.06;
+      ctx.save();
+      ctx.globalCompositeOperation = 'screen';
+      for (let i = 0; i < 4; i++) {
+        const x = (i / 4) * W + Math.sin(t * 0.003 + i) * 60 + W * 0.1;
+        const g = ctx.createLinearGradient(x, 0, x, H * 0.8);
+        g.addColorStop(0, `rgba(100,180,255,${rayAlpha})`);
+        g.addColorStop(1, 'transparent');
+        ctx.fillStyle = g;
+        ctx.beginPath();
+        ctx.moveTo(x - 30, 0);
+        ctx.lineTo(x + 30, 0);
+        ctx.lineTo(x + 150, H * 0.8);
+        ctx.lineTo(x - 150, H * 0.8);
+        ctx.closePath();
+        ctx.fill();
+      }
+      ctx.restore();
+    }
+  }
+
+  function drawMarineSnow() {
+    marineSnow.forEach((s) => {
+      s.x += s.vx;
+      s.y += s.vy;
+      s.phase += 0.01;
+
+      if (mouse.active && mouse.x !== null) {
+        const dx = s.x - mouse.x;
+        const dy = s.y - mouse.y;
+        const d = Math.hypot(dx, dy) || 1;
+        if (d < mouse.radius * 0.8) {
+          const f = (1 - d / (mouse.radius * 0.8)) * 0.6;
+          s.x += (dx / d) * f;
+          s.y += (dy / d) * f;
+        }
+      }
+
+      if (s.y > H + 10) { s.y = -10; s.x = Math.random() * W; }
+      if (s.x < -10) s.x = W + 10;
+      if (s.x > W + 10) s.x = -10;
+
+      const flicker = 0.6 + Math.sin(t * 0.04 + s.phase) * 0.4;
+      ctx.beginPath();
+      ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(180,220,255,${s.alpha * flicker})`;
+      ctx.fill();
+    });
+  }
+
+  function calcAlpha(cr) {
+    const [min, max] = cr.depthRange;
+    const range = 0.15;
+    if (depth < min - range || depth > max + range) return 0;
+    if (depth < min) return (depth - (min - range)) / range;
+    if (depth > max) return 1 - (depth - max) / range;
+    return 1;
+  }
+
+  function drawFish(cr, alpha) {
+    const prox = applyMouseToCreature(cr, 0.9, false);
+
+    cr.x += cr.vx * (cr.flip ? -1 : 1) + cr._fleeX;
+    cr.y += cr.vy + Math.sin(t * 0.03 + cr.phase) * 0.15 + cr._fleeY;
+
+    if (prox > 0.3 && Math.abs(cr._fleeX) > 0.3) {
+      cr.flip = cr._fleeX > 0;
+    }
+
+    if (cr.x > W + 60) { cr.x = -60; cr.y = Math.random() * H; }
+    if (cr.x < -60) { cr.x = W + 60; cr.y = Math.random() * H; }
+    if (cr.y < -40) cr.y = H + 40;
+    if (cr.y > H + 40) cr.y = -40;
+
+    ctx.save();
+    ctx.translate(cr.x, cr.y);
+    if (cr.flip) ctx.scale(-1, 1);
+
+    const c = cr.color;
+    const tailSpeed = 0.15 + prox * 0.35;
+    const tailSwing = Math.sin(t * tailSpeed + cr.phase) * (0.3 + prox * 0.3);
+
+    cr.pts.forEach((p) => {
+      let px = p.x, py = p.y;
+      if (p.x < -cr.size * 1.2) {
+        px += tailSwing * 3;
+        py *= 1 + tailSwing * 0.3;
+      }
+      const flicker = 0.7 + Math.sin(t * 0.08 + cr.phase + p.x * 0.1) * 0.3;
+      const brightBoost = 1 + prox * 0.5;
+      ctx.beginPath();
+      ctx.arc(px, py, 1.4, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${c.r},${c.g},${c.b},${alpha * flicker * brightBoost})`;
+      ctx.fill();
+    });
+
+    ctx.beginPath();
+    ctx.arc(cr.size * 1.1, -cr.size * 0.2, 1.8, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha * 0.9})`;
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function drawJelly(cr, alpha) {
+    const prox = applyMouseToCreature(cr, 0.4, false);
+
+    cr.x += cr.vx + Math.sin(t * 0.02 + cr.phase) * 0.1 + cr._fleeX;
+    cr.y += cr.vy + cr._fleeY;
+
+    if (cr.y < -60) { cr.y = H + 60; cr.x = Math.random() * W; }
+    if (cr.x < -40) cr.x = W + 40;
+    if (cr.x > W + 40) cr.x = -40;
+
+    ctx.save();
+    ctx.translate(cr.x, cr.y);
+
+    const c = cr.color;
+    const breath = 1 + Math.sin(t * 0.05 + cr.phase) * 0.08;
+
+    let mouseLocalX = 0, mouseLocalY = 0;
+    if (mouse.active && mouse.x !== null && prox > 0.05) {
+      mouseLocalX = mouse.x - cr.x;
+      mouseLocalY = mouse.y - cr.y;
+      const ml = Math.hypot(mouseLocalX, mouseLocalY) || 1;
+      mouseLocalX /= ml;
+      mouseLocalY /= ml;
+    }
+
+    cr.pts.forEach((p) => {
+      let px = p.x * breath;
+      let py = p.y * breath;
+
+      if (p.tentacle) {
+        px += Math.sin(t * 0.06 + cr.phase + p.idx * 0.8) * 4 * p.idx * 0.3;
+        py += Math.sin(t * 0.04 + p.idx * 0.5) * 2;
+        const tentacleReach = p.idx / 4;
+        px += mouseLocalX * prox * 8 * tentacleReach;
+        py += mouseLocalY * prox * 8 * tentacleReach;
+      }
+
+      const flicker = 0.6 + Math.sin(t * 0.06 + cr.phase + p.x * 0.05 + p.y * 0.05) * 0.4;
+      const glowBoost = 1 + prox * 0.8;
+      ctx.beginPath();
+      ctx.arc(px, py, 1.3, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${c.r},${c.g},${c.b},${alpha * flicker * glowBoost * (p.tentacle ? 0.7 : 1)})`;
+      ctx.fill();
+    });
+
+    ctx.beginPath();
+    ctx.arc(0, -cr.size * 0.2, cr.size * 0.6 * (1 + prox * 0.3), 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${c.r},${c.g},${c.b},${alpha * (0.15 + prox * 0.2)})`;
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function drawGlowfish(cr, alpha) {
+    const prox = applyMouseToCreature(cr, 0.55, true);
+
+    cr.x += cr.vx + cr._fleeX;
+    cr.y += cr.vy + Math.sin(t * 0.05 + cr.phase) * 0.1 + cr._fleeY;
+
+    if (cr.x < -30) cr.x = W + 30;
+    if (cr.x > W + 30) cr.x = -30;
+    if (cr.y < -30) cr.y = H + 30;
+    if (cr.y > H + 30) cr.y = -30;
+
+    const c = cr.color;
+    const pulse = 0.7 + Math.sin(t * 0.08 + cr.phase) * 0.3;
+    const boost = 1 + prox * 1.5;
+
+    ctx.beginPath();
+    ctx.arc(cr.x, cr.y, cr.size * 5 * pulse * boost, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${c.r},${c.g},${c.b},${alpha * 0.08 * boost})`;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(cr.x, cr.y, cr.size * 2.5 * boost, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(${c.r},${c.g},${c.b},${alpha * 0.2 * boost})`;
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.arc(cr.x, cr.y, cr.size * 0.8, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha * 0.9})`;
+    ctx.fill();
+  }
+
+  function drawSquid(cr, alpha) {
+    const prox = applyMouseToCreature(cr, 1.2, false);
+
+    cr.x += cr.vx + cr._fleeX;
+    cr.y += cr.vy + Math.sin(t * 0.03 + cr.phase) * 0.15 + cr._fleeY;
+
+    if (prox > 0.25 && Math.abs(cr._fleeX) > 0.4) {
+      cr.flip = cr._fleeX > 0;
+    }
+
+    if (cr.x > W + 50) cr.x = -50;
+    if (cr.x < -50) cr.x = W + 50;
+    if (cr.y > H + 50) cr.y = -50;
+    if (cr.y < -50) cr.y = H + 50;
+
+    ctx.save();
+    ctx.translate(cr.x, cr.y);
+    if (cr.flip) ctx.scale(-1, 1);
+
+    const c = cr.color;
+    const alertness = prox;
+    const r2 = Math.round(lerp(c.r, 255, alertness * 0.5));
+    const g2 = Math.round(lerp(c.g, 200, alertness * 0.5));
+    const b2 = Math.round(lerp(c.b, 255, alertness * 0.5));
+
+    cr.pts.forEach((p) => {
+      let px = p.x;
+      let py = p.y;
+      if (p.tentacle) {
+        px += Math.sin(t * (0.08 + prox * 0.15) + p.idx * 0.6 + cr.phase) * p.idx * (1.2 + prox * 1.5);
+      }
+      const flicker = 0.7 + Math.sin(t * 0.05 + p.x * 0.1 + p.y * 0.05) * 0.3;
+      const boost = 1 + prox * 0.6;
+      ctx.beginPath();
+      ctx.arc(px, py, 1.3, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${r2},${g2},${b2},${alpha * flicker * boost})`;
+      ctx.fill();
+    });
+
+    ctx.beginPath();
+    ctx.arc(0, -cr.size * 1.2, 1.5, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha * (0.8 + prox * 0.2)})`;
+    ctx.fill();
+
+    ctx.restore();
+  }
+
+  function drawSeaweed(cr, alpha) {
+    const baseY = H + 5;
+    cr.x = cr.anchorX;
+
+    let mouseBend = 0;
+    if (mouse.active && mouse.x !== null) {
+      const dx = cr.anchorX - mouse.x;
+      const dy = baseY - mouse.y;
+      const d = Math.hypot(dx, dy) || 1;
+      if (d < mouse.radius * 1.2) {
+        const prox = 1 - d / (mouse.radius * 1.2);
+        mouseBend = Math.sign(dx) * prox * 25;
+        cr.swayBoost = lerp(cr.swayBoost, prox, 0.15);
+      } else {
+        cr.swayBoost *= 0.95;
+      }
+    } else {
+      cr.swayBoost *= 0.95;
+    }
+
+    ctx.save();
+    const c = cr.color;
+
+    const nodes = [];
+    cr.pts.forEach((p) => {
+      const sway = Math.sin(t * 0.03 + cr.phase + p.idx * 0.4) * p.idx * (2.5 + cr.swayBoost * 6);
+      const bend = mouseBend * (p.idx / (cr.pts.length - 1));
+      const px = cr.x + sway + bend;
+      const py = baseY - (p.idx * cr.size * 0.15);
+      nodes.push({ x: px, y: py, idx: p.idx });
+    });
+
+    for (let i = 0; i < nodes.length - 1; i++) {
+      const a = nodes[i];
+      const b = nodes[i + 1];
+      ctx.beginPath();
+      ctx.moveTo(a.x, a.y);
+      ctx.lineTo(b.x, b.y);
+      ctx.strokeStyle = `rgba(${c.r},${c.g},${c.b},${alpha * 0.45})`;
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+    }
+
+    nodes.forEach((n) => {
+      const flicker = 0.7 + Math.sin(t * 0.05 + n.idx * 0.5) * 0.3;
+      const boost = 1 + cr.swayBoost * 0.5;
+      ctx.beginPath();
+      ctx.arc(n.x, n.y, 1.4, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${c.r},${c.g},${c.b},${alpha * flicker * boost})`;
+      ctx.fill();
+    });
+
+    ctx.restore();
+  }
+
+  function drawCreatures() {
+    creatures.forEach((cr) => {
+      const a = calcAlpha(cr);
+      cr.alpha = a;
+      if (a < 0.01) return;
+
+      switch (cr.type) {
+        case 'fish': drawFish(cr, a); break;
+        case 'jelly': drawJelly(cr, a); break;
+        case 'glowfish': drawGlowfish(cr, a); break;
+        case 'squid': drawSquid(cr, a); break;
+        case 'seaweed': drawSeaweed(cr, a); break;
+      }
+    });
+  }
+
+  function step() {
+    t += 1;
+    depth += (targetDepth - depth) * 0.05;
+    mouse.influence += ((mouse.active ? 1 : 0) - mouse.influence) * 0.1;
+
+    drawWater();
+    drawMarineSnow();
+    drawCreatures();
+
+    rafId = requestAnimationFrame(step);
+  }
+
+  function start() { if (!running) { running = true; rafId = requestAnimationFrame(step); } }
+  function stop() { running = false; if (rafId) cancelAnimationFrame(rafId); rafId = null; }
+
+  function updateDepth() {
+    const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    targetDepth = clamp(window.scrollY / maxScroll, 0, 1);
+  }
+  window.addEventListener('scroll', updateDepth, { passive: true });
+
+  window.addEventListener('mousemove', (e) => {
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
+    mouse.active = true;
+  });
+  window.addEventListener('mouseleave', () => {
+    mouse.active = false;
+    mouse.x = null;
+    mouse.y = null;
+  });
+  window.addEventListener('touchmove', (e) => {
+    const touch = e.touches[0];
+    if (!touch) return;
+    mouse.x = touch.clientX;
+    mouse.y = touch.clientY;
+    mouse.active = true;
+  }, { passive: true });
+  window.addEventListener('touchend', () => {
+    mouse.active = false;
+    mouse.x = null;
+    mouse.y = null;
+  });
+
+  let rt = null;
+  window.addEventListener('resize', () => {
+    clearTimeout(rt);
+    rt = setTimeout(() => { resize(); updateDepth(); }, 150);
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stop(); else start();
+  });
+
+  resize();
+  updateDepth();
+  start();
+})();
+</script>
+
+</body>
+</html>
